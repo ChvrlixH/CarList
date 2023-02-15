@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="model" placeholder="Model" />
+      <input type="number" id="number" placeholder="Year" />
+      <input type="text" id="info" placeholder="Description" />
+      <select id="condition" newOrOld="selected">
+        <option disabled value="">New or Old</option>
+        <option>New</option>
+        <option>Old</option>
+      </select>
+      <button id="btn" onclick="clk()">Add</button>
+    </div>
+    <hr />
+    <div>
+      <table>
+        <ul id="addTable"></ul>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
