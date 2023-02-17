@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    #addTable {
+      border: 1px solid green none;
+      padding: 10px 20px;
+      width: 43%;
+      height: auto;
+      background: greenyellow;
+    }
+  </style>
   <body>
     <div>
-      <input type="text" id="name" placeholder="Name" />
-      <input type="text" id="model" placeholder="Model" />
-      <input type="number" id="number" placeholder="Year" />
-      <input type="text" id="info" placeholder="Description" />
-      <select id="condition" newOrOld="selected">
-        <option disabled value="">New or Old</option>
-        <option>New</option>
-        <option>Old</option>
-      </select>
-      <button id="btn" onclick="clk()">Add</button>
+      <form id="tableUl" onsubmit="return false">
+        <input type="text" required id="name" placeholder="Name" />
+        <input type="text" required id="model" placeholder="Model" />
+        <input type="number" required id="number" placeholder="Year" />
+        <input type="text" required id="info" placeholder="Description" />
+        <select id="condition" newOrOld="selected">
+          <option disabled value="">New or Old</option>
+          <option>New</option>
+          <option>Old</option>
+        </select>
+        <button id="btn" onclick="clk()">Add</button>
+        <input type="reset" value="Reset" onclick="clear()" />
+      </form>
     </div>
     <hr />
     <div>

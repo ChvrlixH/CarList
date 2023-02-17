@@ -40,3 +40,7 @@ function refresh() {
     tableList.appendChild(carList);
   }
 }
+
+function clear() {
+  document.getElementById("tableUl").reset();
+}
